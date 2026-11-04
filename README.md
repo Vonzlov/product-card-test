@@ -42,7 +42,7 @@ python -m card_assistant from-feed 191953 -o my_product.json
 | Провайдер | `LLM_BASE_URL` | Пример `LLM_MODEL` |
 |---|---|---|
 | OpenAI | `https://api.openai.com/v1` | `gpt-4.1-mini` |
-| DeepSeek | `https://api.deepseek.com` | `deepseek-chat` |
+| DeepSeek | `https://api.deepseek.com` | `deepseek-v4-flash` |
 | OpenRouter | `https://openrouter.ai/api/v1` | `openai/gpt-4.1-mini` |
 | Ollama (локально, без ключа) | `http://localhost:11434/v1` | `qwen2.5:14b` |
 
