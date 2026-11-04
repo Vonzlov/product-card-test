@@ -1,4 +1,5 @@
 import logging
+import re
 from datetime import datetime, timezone
 
 from pydantic import ValidationError
@@ -39,6 +40,8 @@ def generate_card(product: ProductInput, llm: LLMClient, max_repairs: int = 2) -
 
 
 def parse_answer(raw: str) -> LLMAnswer:
+    # Локальные reasoning-модели (qwen3, deepseek-r1) могут вернуть рассуждения в <think>…</think> прямо в ответе
+    raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL)
     # Модели иногда оборачивают JSON в ```json … ``` или добавляют фразу до или после
     start, end = raw.find("{"), raw.rfind("}")
     if start == -1 or end <= start:

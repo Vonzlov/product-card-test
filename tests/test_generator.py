@@ -61,6 +61,12 @@ def test_invalid_json_is_retried(manometer):
     assert "не разобран как JSON" in llm.calls[1][-1]["content"]
 
 
+def test_reasoning_block_is_ignored(manometer):
+    raw = "<think>Нужно вернуть {json} без выдумок…</think>\n" + json.dumps(manometer_answer(), ensure_ascii=False)
+    card = generate_card(manometer, FakeLLM(raw))
+    assert card.meta["attempts"] == 1 and card.status == "ok"
+
+
 def test_never_valid_json_raises(manometer):
     with pytest.raises(GenerationError, match="за 3 попыток"):
         generate_card(manometer, FakeLLM('{"seo_title": "без описания"}'), max_repairs=2)
