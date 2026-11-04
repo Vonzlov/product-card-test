@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Фрагмент реального фида https://www.souz-pribor.ru/yml/any/feed.xml (04.11.2026): несколько категорий и офферов без изменений. -->
+<yml_catalog date="2026-11-04T08:10:27+03:00">
+    <shop>
+        <name>СОЮЗ-ПРИБОР</name>
+        <company>СОЮЗ-ПРИБОР</company>
+        <url>https://www.souz-pribor.ru</url>
+        <categories>
+            <category id="321">Оборудование для промышленной автоматизации</category>
+            <category id="322" parentId="321">Измерители-регуляторы</category>
+            <category id="339" parentId="321">Преобразователи (датчики) давления</category>
+            <category id="358">Теплотехнические приборы, газоанализаторы, счетчики</category>
+            <category id="369" parentId="358">Манометры показывающие</category>
+        </categories>
+        <offers>
+            <offer id="191953" available="true" group_id="14472">
+                <name>ТМ-510Р.00(0-2,5 МПа)G1/2</name>
+                <typePrefix>манометр показывающий</typePrefix>
+                <url>https://www.souz-pribor.ru/product/tm-510/</url>
+                <categoryId>369</categoryId>
+                <vendor>РОСМА</vendor>
+                <vendorCode/>
+                <picture>https://www.souz-pribor.ru/upload/iblock/d96/d962aefb202bc0db294d7c0a0626eafa.jpg</picture>
+                <price>1045</price>
+                <currencyId>RUR</currencyId>
+                <param name="Код товара">77321</param>
+            </offer>
+            <offer id="229565" available="true">
+                <name>ТРМ500-Щ2.30А</name>
+                <typePrefix>терморегулятор</typePrefix>
+                <url>https://www.souz-pribor.ru/product/trm500-shch2-30a/</url>
+                <categoryId>322</categoryId>
+                <vendor>ОВЕН</vendor>
+                <vendorCode>47452</vendorCode>
+                <picture>https://www.souz-pribor.ru/upload/iblock/a0f/22s9rsrugn96h02ma3bzary5r0a2i507/718d461f_3b2e_41af_8124_e88eccfc2a7b.png</picture>
+                <price>5612</price>
+                <currencyId>RUR</currencyId>
+                <param name="Артикул">47452</param>
+                <param name="Код товара">79130</param>
+            </offer>
+            <offer id="73410" available="true" group_id="12661">
+                <name>ПД100-ДИ1,6-111-0,5</name>
+                <typePrefix>датчик давления общепромышленный для объектов ЖКХ</typePrefix>
+                <url>https://www.souz-pribor.ru/product/pd100-di-div-dv-da-111-171-181/</url>
+                <categoryId>339</categoryId>
+                <vendor>ОВЕН</vendor>
+                <vendorCode>42574</vendorCode>
+                <picture>https://www.souz-pribor.ru/upload/iblock/e0d/t557cgav8z6lh759muwuoq0lrxtf6cli/PD100-modeli-1kh1_23_01_23_1.jpg</picture>
+                <price>6344</price>
+                <currencyId>RUR</currencyId>
+                <param name="Артикул">42574</param>
+                <param name="Код товара">65316</param>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>

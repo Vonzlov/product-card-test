@@ -1,0 +1,13 @@
+{
+  "name": "Датчик давления общепромышленный для объектов ЖКХ ПД100-ДИ1,6-111-0,5",
+  "manufacturer": "ОВЕН",
+  "category": "Преобразователи (датчики) давления",
+  "specs": {},
+  "description": "",
+  "source": {
+    "feed_offer_id": "73410",
+    "url": "https://www.souz-pribor.ru/product/pd100-di-div-dv-da-111-171-181/",
+    "sku": "42574",
+    "note": "Собрано только из YML-фида."
+  }
+}
